@@ -2,7 +2,9 @@ import os
 import requests
 import argparse
 
-
+#TO DO:
+#Loop through dictionaries for relevant info
+#Print stuff to terminal in clean format. Figure out how to use colors?
 
 
 def printInfo(response):
