@@ -17,14 +17,15 @@ def printInfo(response):
     if responseDict.get("NameSpaceType") == "Unknown":
         print("This domain does not exist in M365")
     elif responseDict.get("NameSpaceType") == "Federated":
-        print(f"{domain} is a Federated domain")
+        print(f"{args.d} is a Federated domain")
     elif responseDict.get("NameSpaceType") == "Managed":
-        print(f"{domain} is a Managed domain")
+        print(f"{args.d} is a Managed domain")
 
     print("--------")
     print(f"Domain Auth URL is - {responseDict.get('AuthURL')}")
     print("--------")
     return
+
 def userEnum(username):
     #Add Userenumeration here    
     return
